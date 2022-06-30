@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Net.Http.WinHttpHandler</name>
+    </assembly>
+    <members>
+        <member name="P:System.SR.net_securityprotocolnotsupported">
+            <summary>The requested security protocol is not supported.</summary>
+        </member>
+        <member name="P:System.SR.net_http_invalid_cookiecontainer">
+            <summary>When using CookieUsePolicy.UseSpecifiedCookieContainer, the CookieContainer property must not be null.</summary>
+        </member>
+        <member name="P:System.SR.net_http_invalid_proxyusepolicy">
+            <summary>When using a non-null Proxy, the WindowsProxyUsePolicy property must be set to WindowsProxyUsePolicy.UseCustomProxy.</summary>
+        </member>
+        <member name="P:System.SR.net_http_invalid_proxy">
+            <summary>When using WindowsProxyUsePolicy.UseCustomProxy, the Proxy property must not be null.</summary>
+        </member>
+        <member name="P:System.SR.net_http_handler_norequest">
+            <summary>A request message must be provided. It cannot be null.</summary>
+        </member>
+        <member name="P:System.SR.net_http_operation_started">
+            <summary>This instance has already started one or more requests. Properties can only be modified before sending the first request.</summary>
+        </member>
+        <member name="P:System.SR.net_http_client_execution_error">
+            <summary>An error occurred while sending the request.</summary>
+        </member>
+        <member name="P:System.SR.net_http_io_read">
+            <summary>The read operation failed, see inner exception.</summary>
+        </member>
+        <member name="P:System.SR.net_http_io_read_incomplete">
+            <summary>Unable to read data from the transport connection. The connection was closed before all data could be read. Expected {0} bytes, read {1} bytes.</summary>
+        </member>
+        <member name="P:System.SR.net_http_io_write">
+            <summary>The write operation failed, see inner exception.</summary>
+        </member>
+        <member name="P:System.SR.net_http_chunked_not_allowed_with_empty_content">
+            <summary>'Transfer-Encoding: chunked' header can not be used when content object is not specified.</summary>
+        </member>
+        <member name="P:System.SR.net_http_invalid_enable_first">
+            <summary>The {0} property must be set to '{1}' to use this property.</summary>
+        </member>
+        <member name="P:System.SR.net_http_value_must_be_greater_than">
+            <summary>The specified value must be greater than {0}.</summary>
+        </member>
+        <member name="P:System.SR.net_http_username_empty_string">
+            <summary>The username for a credential object cannot be null or empty.</summary>
+        </member>
+        <member name="P:System.SR.net_http_no_concurrent_io_allowed">
+            <summary>The stream does not support concurrent I/O read or write operations.</summary>
+        </member>
+        <member name="P:System.SR.net_http_buffer_insufficient_length">
+            <summary>The buffer was not long enough.</summary>
+        </member>
+        <member name="P:System.SR.ArgumentOutOfRange_NeedPosNum">
+            <summary>Positive number required.</summary>
+        </member>
+        <member name="P:System.SR.NotSupported_UnreadableStream">
+            <summary>Stream does not support reading.</summary>
+        </member>
+        <member name="P:System.SR.NotSupported_UnwritableStream">
+            <summary>Stream does not support writing.</summary>
+        </member>
+        <member name="P:System.SR.ObjectDisposed_StreamClosed">
+            <summary>Cannot access a closed stream.</summary>
+        </member>
+        <member name="P:System.SR.net_http_content_stream_already_read">
+            <summary>The stream was already consumed. It cannot be read again.</summary>
+        </member>
+        <member name="P:System.SR.net_http_winhttp_error">
+            <summary>Error {0} calling {1}, '{2}'.</summary>
+        </member>
+        <member name="P:System.SR.PlatformNotSupported_WinHttpHandler">
+            <summary>WinHttpHandler is only supported on .NET Framework and .NET runtimes on Windows. It is not supported for Windows Store Applications (UWP) or Unix platforms.</summary>
+        </member>
+        <member name="P:System.SR.net_http_unsupported_requesturi_scheme">
+            <summary>The '{0}' scheme is not supported.</summary>
+        </member>
+        <member name="P:System.SR.net_http_client_invalid_requesturi">
+            <summary>An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute">
+            <summary>Specifies that the method or property will ensure that the listed field and property members have not-null values.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String)">
+            <summary>Initializes the attribute with a field or property member.</summary>
+            <param name="member">
+            The field or property member that is promised to be not-null.
+            </param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String[])">
+            <summary>Initializes the attribute with the list of field and property members.</summary>
+            <param name="members">
+            The list of field and property members that are promised to be not-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.Members">
+            <summary>Gets field or property member names.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute">
+            <summary>Specifies that the method or property will ensure that the listed field and property members have not-null values when returning with the specified return value condition.</summary>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String)">
+            <summary>Initializes the attribute with the specified return value condition and a field or property member.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+            <param name="member">
+            The field or property member that is promised to be not-null.
+            </param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String[])">
+            <summary>Initializes the attribute with the specified return value condition and list of field and property members.</summary>
+            <param name="returnValue">
+            The return value condition. If the method returns this value, the associated parameter will not be null.
+            </param>
+            <param name="members">
+            The list of field and property members that are promised to be not-null.
+            </param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.ReturnValue">
+            <summary>Gets the return value condition.</summary>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.Members">
+            <summary>Gets field or property member names.</summary>
+        </member>
+        <member name="T:System.Runtime.Versioning.OSPlatformAttribute">
+            <summary>
+            Base type for all platform-specific API attributes.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Versioning.TargetPlatformAttribute">
+            <summary>
+            Records the platform that the project targeted.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Versioning.SupportedOSPlatformAttribute">
+             <summary>
+             Records the operating system (and minimum version) that supports an API. Multiple attributes can be
+             applied to indicate support on multiple operating systems.
+             </summary>
+             <remarks>
+             Callers can apply a <see cref="T:System.Runtime.Versioning.SupportedOSPlatformAttribute" />
+             or use guards to prevent calls to APIs on unsupported operating systems.
+            
+             A given platform should only be specified once.
+             </remarks>
+        </member>
+        <member name="T:System.Runtime.Versioning.UnsupportedOSPlatformAttribute">
+            <summary>
+            Marks APIs that were removed in a given operating system version.
+            </summary>
+            <remarks>
+            Primarily used by OS bindings to indicate APIs that are only available in
+            earlier versions.
+            </remarks>
+        </member>
+        <member name="T:System.Runtime.Versioning.SupportedOSPlatformGuardAttribute">
+             <summary>
+             Annotates a custom guard field, property or method with a supported platform name and optional version.
+             Multiple attributes can be applied to indicate guard for multiple supported platforms.
+             </summary>
+             <remarks>
+             Callers can apply a <see cref="T:System.Runtime.Versioning.SupportedOSPlatformGuardAttribute" /> to a field, property or method
+             and use that field, property or method in a conditional or assert statements in order to safely call platform specific APIs.
+            
+             The type of the field or property should be boolean, the method return type should be boolean in order to be used as platform guard.
+             </remarks>
+        </member>
+        <member name="T:System.Runtime.Versioning.UnsupportedOSPlatformGuardAttribute">
+             <summary>
+             Annotates the custom guard field, property or method with an unsupported platform name and optional version.
+             Multiple attributes can be applied to indicate guard for multiple unsupported platforms.
+             </summary>
+             <remarks>
+             Callers can apply a <see cref="T:System.Runtime.Versioning.UnsupportedOSPlatformGuardAttribute" /> to a field, property or method
+             and use that  field, property or method in a conditional or assert statements as a guard to safely call APIs unsupported on those platforms.
+            
+             The type of the field or property should be boolean, the method return type should be boolean in order to be used as platform guard.
+             </remarks>
+        </member>
+    </members>
+</doc>
