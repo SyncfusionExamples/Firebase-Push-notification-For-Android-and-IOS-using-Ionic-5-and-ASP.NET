@@ -1,0 +1,57 @@
+ion-input {
+  border: solid 1px black;
+  --background: white !important;
+  background: white !important;
+  color: black;
+  height: 30px;
+  ::placeholder {
+      font-size: 12px;
+      padding-top: 6px !important;
+  }
+}
+ion-textarea {
+  background: white;
+  color: black;
+  margin: 0px;
+  height: 200px;
+
+  textarea {
+      height: 200px;
+  }
+}
+ion-button {
+  --background: #be1e2d;
+  color: white;
+  width: 150px;
+  height: 40px;
+}
+
+ion-content {
+  --background: none;
+  background-image: url("/assets/Images/Black.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.align-center{
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.label-message {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.submit-btn {
+  margin: 10px 0px;
+}
+
+.p-30{
+  padding: 10px 30px;
+}

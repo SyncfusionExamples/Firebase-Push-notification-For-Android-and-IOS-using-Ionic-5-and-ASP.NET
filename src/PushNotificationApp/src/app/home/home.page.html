@@ -1,0 +1,36 @@
+<ion-content>
+    <form #sendForm="ngForm" novalidate>
+        <ion-row class="row-style">
+            <ion-col class="align-center p-30">
+                <div class="label-message">
+                    Title
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="row-style">
+            <ion-col class="align-center p-30">
+                <ion-input type="text" id="message" name="message" #message="ngModel"
+                    [(ngModel)]="notificationList.NotificationTitle" placeholder="Type your title" required></ion-input>
+            </ion-col>
+        </ion-row>
+        <ion-row class="row-style">
+            <ion-col class="align-center p-30">
+                <div class="label-message">
+                    Description
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="row-style">
+            <ion-col class="align-center p-30">
+                <ion-textarea type="text" id="message" name="message" #message="ngModel"
+                    [(ngModel)]="notificationList.NotificationBody" placeholder="Type your description" maxlength="120"
+                    required></ion-textarea>
+            </ion-col>
+        </ion-row>
+        <ion-row class="row-style">
+            <ion-col class="align-center submit-btn p-30">
+                <ion-button type="submit" (click)="sendMessage(sendForm)">Send Message</ion-button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>
